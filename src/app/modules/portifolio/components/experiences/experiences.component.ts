@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { IExperienceInterface } from '../../interface/experience.interface';
+import { IExperience } from '../../interface/experience.interface';
 
 @Component({
   selector: 'app-experiences',
@@ -9,7 +9,7 @@ import { IExperienceInterface } from '../../interface/experience.interface';
   styleUrl: './experiences.component.scss',
 })
 export class ExperiencesComponent {
-  public experiences = signal<IExperienceInterface[]>([
+  public experiences = signal<IExperience[]>([
     {
       summary: {
         title: 'Analista de Tecnologia da Informação',

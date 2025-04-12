@@ -2,4 +2,15 @@
 <main>
 	<app-knowledge />
 	<app-experiences />
+	@defer (on viewport) {
+		<app-projects />
+	} @placeholder {
+		<div class="placeholder">
+			<p>Carregando projetos...</p>
+		</div>
+	} @error {
+		<div class="error">
+			<p>Erro ao carregar o componente de projetos...</p>
+		</div>
+	}
 </main>
