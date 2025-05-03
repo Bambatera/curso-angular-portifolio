@@ -7,5 +7,5 @@ export interface IProjects {
   width: string;
   height: string;
   description: string;
-  link: ILink;
+  links: ILink[];
 }
